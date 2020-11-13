@@ -59,6 +59,7 @@ html {
   border-radius: 4px;
 }
 #app .nav {
+  backgroun:#fff;
   z-index: 1;
   position: fixed;
   top: 54px;
@@ -137,6 +138,7 @@ html {
   position: relative;
   top: 90px;
   left: 50%;
+  border-radius:6px;
   transform: translateX(-50%);
   width: 350px;
   height: 110px;
