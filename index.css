@@ -1,0 +1,252 @@
+body,
+html {
+  height: 100%;
+}
+#app {
+  height: 100%;
+  overflow: scroll;
+}
+#app .header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  background-color: #fff;
+  justify-content: space-between;
+}
+#app .header .logo {
+  margin-left: 18px;
+}
+#app .header .search-input {
+  width: 132px;
+  height: 24px;
+  background-color: #f4f4f4;
+  color: #999;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 12px;
+  padding-right: 5px;
+}
+#app .header .search-input svg {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#app .header .search-input span {
+  width: 92px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#app .header .avatar svg {
+  border-radius: 50%;
+}
+#app .header .download {
+  width: 58px;
+  height: 23px;
+  line-height: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  background-color: #fb7299;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+}
+#app .nav {
+  z-index: 1;
+  background:#fff;
+  position: fixed;
+  top: 54px;
+  left: 0;
+  right: 0;
+}
+#app .nav ul {
+  width: 85%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  padding-left: 24px;
+}
+#app .nav ul::-webkit-scrollbar {
+  display: none;
+}
+#app .nav ul li {
+  display: inline-block;
+  height: 30px;
+  margin-right: 40px;
+  line-height: 30px;
+  color: #757575;
+  font-size: 14px;
+  border-bottom: 2px solid transparent;
+}
+#app .nav ul li.active {
+  border-bottom: #fb7299 2px solid;
+  color: #fb7299;
+}
+#app .nav .down {
+  position: absolute;
+  top: 3px;
+  right: 13px;
+}
+#app .hideNav {
+  position: fixed;
+  z-index: 2;
+  top: 54px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding-bottom: 20px;
+  transition: top 0.3s;
+}
+#app .hideNav.hide {
+  top: -117px;
+}
+#app .hideNav ul li {
+  display: inline-block;
+  width: 32px;
+  text-align: center;
+  margin-left: 14px;
+  margin-bottom: 10px ;
+  margin-right: 14px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 14px;
+  color: #757575;
+  border-bottom: 2px solid transparent;
+}
+#app .hideNav ul li.big {
+  width: 46px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#app .hideNav ul li.active {
+  border-color: #fb7299;
+  color: #fb7299;
+}
+#app .hideNav .up {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#app .banner {
+  position: relative;
+  top: 90px;
+  left: 50%;
+  border-radius: 6px;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 110px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+#app .banner .banner-image {
+  position: absolute;
+  width: 1400px;
+  transition: left 0.3s;
+}
+#app .banner .banner-image li {
+  float: left;
+  width: 350px;
+  height: 110px;
+}
+#app .banner .banner-image li img {
+  width: 100%;
+  height: 100%;
+}
+#app .banner .banner-list {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  height: 10px;
+  padding-right: 3px;
+  padding-left: 3px;
+  border-radius: 5px;
+  bottom: 3px;
+}
+#app .banner .banner-list li {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-right: 3px;
+  background-color: #fff;
+}
+#app .banner .banner-list li.active {
+  background-color: #fb7299;
+}
+#app .video {
+  padding: 100px 6px 0;
+}
+#app .video ul::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+#app .video ul li {
+  float: left;
+  width: 50%;
+}
+#app .video ul li .main {
+  position: relative;
+  height: 106px;
+  margin-left: 6px;
+  margin-right: 6px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+#app .video ul li .main img {
+  width: 100%;
+  height: 100%;
+}
+#app .video ul li .main .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  height: 20px;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  color: #fff;
+  background-image: linear-gradient(rgba(33, 33, 33, 0), rgba(33, 33, 33, 0.5));
+}
+#app .video ul li .main .info div {
+  display: inline-flex;
+  margin-right: 15px;
+  align-items: center;
+}
+#app .video ul li .main .info div svg {
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+  fill: #fff;
+}
+#app .video ul li .des {
+  margin: 6px 6px 10px;
+  height: 38px;
+  line-height: 20px;
+  font-size: 13px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+#app .foot {
+  margin-top: 40px;
+}
+#app .foot p {
+  color: #999;
+  text-align: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
